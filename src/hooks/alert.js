@@ -1,7 +1,8 @@
 import { ref } from 'vue'
 
-export default function useAlert() {
-  const alertIsVisible = ref(false);
+// NICE BONUS of composables (custom hooks can take arguments: e.g. startVisibility)
+export default function useAlert(startVisibility = false) {
+  const alertIsVisible = ref(startVisibility);
 
   function showAlert() {
     alertIsVisible.value = true;

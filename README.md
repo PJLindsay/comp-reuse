@@ -36,6 +36,11 @@ If there are duplicates (e.g. mounted() in component and global mixed):
 
 SOLUTION: Composition API - 'Custom Composition Functions' provides better approach than mixins (aka hooks, composables)
 
+BONUS 1: you can pass params to your hooks so you can handle many different use cases (with shared code)
+
+BONUS 2: where your methods/etc comes from is documented (showAlert, etc. comes from useAlert hook/composable)
+    const [alertIsVisible, showAlert, hideAlert] = useAlert(true);
+
 ## Installation
 
 npm install
