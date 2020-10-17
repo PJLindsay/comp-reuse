@@ -16,6 +16,12 @@ What can be reused?
 In this (extreme) case all the logic in AddUser.vue and DeleteUser.vue is identical
 We will move this to /mixins/alert.js
 
+### Mixin Merging
+
+by default: data is combined
+If there is a clash/conflict - component Options win (will overwrite mixin data)
+
+
 
 ## Installation
 
