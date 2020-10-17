@@ -34,7 +34,7 @@ If there are duplicates (e.g. mounted() in component and global mixed):
 - when you build bigger applications, mixins make code harder to understand (where does data/function come from?)
   example: does showAlert() coming from error handler or alert mixin? (if you had 5 mixins in a component)
 
-SOLUTION: Composition API - 'Custom Composition Functions' is a better approach than mixins
+SOLUTION: Composition API - 'Custom Composition Functions' provides better approach than mixins (aka hooks, composables)
 
 ## Installation
 
